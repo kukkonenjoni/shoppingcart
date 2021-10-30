@@ -63,7 +63,7 @@ function SingleProduct(props) {
                   </div>
                   <img
                     style={img_style}
-                    src={images[item.id]}
+                    src={images[item.id].default}
                     alt={item.name}
                   />
                   <div>
