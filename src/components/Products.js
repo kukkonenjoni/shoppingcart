@@ -42,7 +42,7 @@ function Products(props) {
       return (
         <Link to={`${url}${item.id}`} style={link} key={item.id}>
           <div style={product_div}>
-            <img src={images[item.id]} alt={item.name} />
+            <img src={images[item.id].default} alt={item.name} />
             <h1>{item.name}</h1>
             <h2>{item.price}€</h2>
           </div>
