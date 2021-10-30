@@ -1,13 +1,79 @@
-body {
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  font-family: sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 17px;
+  height: 15%;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+}
+.main-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85%;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.filter:hover {
+  cursor: pointer;
+}
+.filter-container {
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.flex {
+  display: flex;
+}
+.prod_display {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.flex_prod {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
 }
