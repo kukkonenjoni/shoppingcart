@@ -54,7 +54,7 @@ export default function Cart(props) {
         return (
           <div key={index} style={{ display: "flex" }}>
             <div>
-              <img src={images[item.id]} alt={item.name} />
+              <img src={images[item.id].default} alt={item.name} />
             </div>
             <div>
               <h1>{item.name}</h1>
